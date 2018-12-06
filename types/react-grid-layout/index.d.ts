@@ -15,7 +15,7 @@ export = ReactGridLayout;
 declare class ReactGridLayout extends React.Component<ReactGridLayout.ReactGridLayoutProps> { }
 
 declare namespace ReactGridLayout {
-    type Breakpoints = 'lg' | 'md' | 'sm' | 'xs' | 'xxs';
+    type Breakpoints = 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'xxs';
 
     interface Layout {
         /**
@@ -259,14 +259,14 @@ declare namespace ReactGridLayout {
 
     interface ResponsiveProps extends CoreProps {
         /**
-         * `{name: pxVal}, e.g. {lg: 1200, md: 996, sm: 768, xs: 480}`
+         * `{name: pxVal}, e.g. {xl: 1920, lg: 1200, md: 996, sm: 768, xs: 480}`
          *
          * Breakpoint names are arbitrary but must match in the cols and layouts objects.
          */
         breakpoints?: {[P in Breakpoints]: number };
 
         /**
-         * Number of cols. This is a breakpoint -> cols map, e.g. `{lg: 12, md: 10, ...}`.
+         * Number of cols. This is a breakpoint -> cols map, e.g. `{xl: 14, lg: 12, md: 10, ...}`.
          */
         cols?: {[P in Breakpoints]: number };
 
