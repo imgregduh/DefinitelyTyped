@@ -43,8 +43,8 @@ class ResponsiveGridTest extends React.Component {
       <Responsive
         layouts={layouts}
         width={800}
-        breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
-        cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
+        breakpoints={{ xl: 1920, lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
+        cols={{ xl: 14, lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
       >
         <div key="1">a</div>
         <div key="2">b</div>
@@ -59,8 +59,8 @@ class ResponsiveGridWidthProviderTest extends React.Component {
     return (
       <ResponsiveWidth
         measureBeforeMount={true}
-        breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
-        cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
+        breakpoints={{xl: 1920, lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
+        cols={{ xl: 14, lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
       >
         <div key="1">a</div>
         <div key="2">b</div>
